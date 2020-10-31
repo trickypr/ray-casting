@@ -1,3 +1,5 @@
+// This code is based of the related video for the coding train
+
 let wall
 let particle
 
