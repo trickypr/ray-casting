@@ -1,11 +1,12 @@
 class Ray {
 	constructor(pos, angle) {
 		this.pos = pos
-		this.dir = p5.Vector.fromAngle(angle)
+    this.dir = p5.Vector.fromAngle(angle)
+    this.initAngle = angle
   }
   
   setAngle(a) {
-    this.dir = p5.Vector.fromAngle(a)
+    this.dir = p5.Vector.fromAngle(this.initAngle + a)
   }
 
 	lookAt(x, y) {
